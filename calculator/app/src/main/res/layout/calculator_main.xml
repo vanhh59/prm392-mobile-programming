@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/calculator">
+
+    <!-- Header Simple Calculator  -->
+    <TextView
+        android:id="@+id/calculatorHeader"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/margin_8"
+        android:layout_marginTop="@dimen/margin_88"
+        android:layout_marginRight="@dimen/margin_8"
+        android:gravity="center"
+        android:text="@string/calculator_header"
+        android:textSize="@dimen/text_size_24"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/num1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/margin_32"
+        android:layout_marginTop="@dimen/margin_180"
+        android:layout_marginRight="@dimen/margin_32"
+        android:autofillHints=""
+        android:background="@color/grey"
+        android:ems="10"
+        android:hint="@string/calculator_num1_hint"
+        android:inputType="numberDecimal"
+        android:minHeight="@dimen/min_height_50"
+        android:padding="@dimen/padding_10"
+        android:textColorHint="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="TextContrastCheck,VisualLintTextFieldSize" />
+
+    <EditText
+        android:id="@+id/num2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/margin_32"
+        android:layout_marginTop="@dimen/margin_32"
+        android:layout_marginRight="@dimen/margin_32"
+        android:background="@color/grey"
+        android:ems="10"
+        android:hint="@string/calculator_num2_hint"
+        android:inputType="numberDecimal"
+        android:minHeight="@dimen/min_height_50"
+        android:padding="@dimen/padding_10"
+        android:textColorHint="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/num1"
+        tools:ignore="Autofill,TextContrastCheck,VisualLintTextFieldSize" />
+
+    <LinearLayout
+        android:id="@+id/buttonContainer"
+        style="?android:attr/buttonBarStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/margin_32"
+        android:layout_marginTop="@dimen/margin_32"
+        android:layout_marginRight="@dimen/margin_32"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/num2">
+
+        <Button
+            android:id="@+id/addBtn"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/margin_8"
+            android:layout_weight="1"
+            android:backgroundTint="@color/blue"
+            android:text="@string/calculator_addBtn"
+            android:textAllCaps="true"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size_11"
+            app:cornerRadius="@dimen/margin_5"
+            tools:ignore="VisualLintButtonSize,TextContrastCheck" />
+
+        <Button
+            android:id="@+id/subtractBtn"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/margin_8"
+            android:layout_weight="1"
+            android:backgroundTint="@color/blue"
+            android:text="@string/calculator_subtractBtn"
+            android:textAllCaps="true"
+            android:textSize="@dimen/text_size_11"
+            app:cornerRadius="@dimen/margin_5"
+            android:textColor="@color/white"
+            tools:ignore="TextContrastCheck,VisualLintButtonSize" />
+
+        <Button
+            android:id="@+id/multiplyBtn"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/margin_8"
+            android:layout_weight="1"
+            android:backgroundTint="@color/blue"
+            android:text="@string/calculator_multipleBtn"
+            android:textAllCaps="true"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size_11"
+            app:cornerRadius="@dimen/margin_5"
+            tools:ignore="VisualLintButtonSize,TextContrastCheck" />
+
+        <Button
+            android:id="@+id/divideBtn"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:backgroundTint="@color/blue"
+            android:text="@string/calculator_divideBtn"
+            android:textAllCaps="true"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size_11"
+            app:cornerRadius="@dimen/margin_5"
+            tools:ignore="TextContrastCheck,VisualLintButtonSize" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/resultContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_32"
+        android:layout_marginLeft="@dimen/margin_32"
+        android:layout_marginRight="@dimen/margin_32"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonContainer">
+
+        <TextView
+            android:id="@+id/resultLabel"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/calculator_resultLabel"
+            android:gravity="start"
+            android:textSize="@dimen/text_size_18"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/resultOutput"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="4"
+            android:gravity="start"
+            android:textSize="@dimen/text_size_18"
+            android:textStyle="bold"
+            android:textColor="@color/black" />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

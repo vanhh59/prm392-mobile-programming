@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "376981827489",
+    "firebase_url": "https://android-db-10f62-default-rtdb.asia-southeast1.firebasedatabase.app",
+    "project_id": "android-db-10f62",
+    "storage_bucket": "android-db-10f62.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:376981827489:android:2e6f38a86ef350618065e0",
+        "android_client_info": {
+          "package_name": "com.example.demologin"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCBtO1jKZ8a9PhYBYUgv8ySeJ9ZZymU9Dg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/dangky_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/padding_16"
+    android:background="@color/background_color"
+    tools:context=".RegisterActivity">
+
+    <!-- Logo Image -->
+    <ImageView
+        android:id="@+id/fpt_logo"
+        android:layout_width="wrap_content"
+        android:layout_height="92dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/margin_20"
+        android:contentDescription="@string/fpt_logo_description"
+        android:src="@drawable/fpt_logo"
+        tools:ignore="ImageContrastCheck" />
+
+    <!-- Registration Form Title -->
+    <TextView
+        android:id="@+id/RegisterForm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/fpt_logo"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/margin_20"
+        android:text="@string/register_title"
+        android:textSize="@dimen/text_size24"
+        android:textStyle="bold"
+        tools:ignore="HardcodedText" />
+
+    <!-- Email Field -->
+    <EditText
+        android:id="@+id/reg_email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/RegisterForm"
+        android:layout_marginTop="@dimen/margin_20"
+        android:hint="@string/email_hint"
+        android:inputType="textEmailAddress"
+        android:minHeight="@dimen/margin_48"
+        android:selectAllOnFocus="true"
+        android:textColorHint="#263238"
+        tools:ignore="Autofill,TextContrastCheck,VisualLintTextFieldSize" />
+
+    <!-- Password Field -->
+    <EditText
+        android:id="@+id/reg_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/reg_email"
+        android:layout_marginTop="@dimen/margin_10"
+        android:hint="@string/password_hint"
+        android:imeOptions="actionDone"
+        android:inputType="textPassword"
+        android:minHeight="@dimen/margin_48"
+        android:selectAllOnFocus="true"
+        android:textColorHint="#263238"
+        tools:ignore="Autofill,TextContrastCheck,VisualLintTextFieldSize" />
+
+    <!-- Confirm Password Field -->
+    <EditText
+        android:id="@+id/reg_confirm_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/reg_password"
+        android:layout_marginTop="@dimen/margin_10"
+        android:hint="@string/confirm_password_hint"
+        android:imeOptions="actionDone"
+        android:inputType="textPassword"
+        android:minHeight="@dimen/margin_48"
+        android:selectAllOnFocus="true"
+        android:textColorHint="#263238"
+        tools:ignore="Autofill,TextContrastCheck,VisualLintTextFieldSize" />
+
+    <!-- Register Button -->
+    <Button
+        android:id="@+id/register"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/reg_confirm_password"
+        android:layout_marginTop="@dimen/margin_20"
+        android:text="@string/register_button"
+        android:enabled="true"
+        tools:ignore="DuplicateSpeakableTextCheck,VisualLintButtonSize" />
+
+    <!-- Already Have an Account TextView -->
+    <TextView
+        android:id="@+id/reg_already_account"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/register"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/margin_16"
+        android:text="@string/already_have_account_text"
+        android:textColor="#263238" />
+
+    <!-- Login Button -->
+    <Button
+        android:id="@+id/go_to_login"
+        android:layout_width="383dp"
+        android:layout_height="44dp"
+        android:layout_below="@id/reg_already_account"
+        android:layout_marginTop="@dimen/margin_16"
+        android:enabled="true"
+        android:text="@string/go_to_login_button"
+        tools:ignore="VisualLintButtonSize,TouchTargetSizeCheck" />
+</RelativeLayout>

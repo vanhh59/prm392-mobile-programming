@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Calculator</string>
+    <string name="calculator_num1_hint">Nhập số thứ nhất</string>
+    <string name="calculator_num2_hint">Nhập số thứ hai</string>
+    <string name="calculator_addBtn">Cộng</string>
+    <string name="calculator_subtractBtn">Trừ</string>
+    <string name="calculator_multipleBtn">Nhân</string>
+    <string name="calculator_divideBtn">Chia</string>
+    <string name="calculator_resultLabel">Kết quả:</string>
+    <string name="calculator_header">Ivan Calculator</string>
+</resources>

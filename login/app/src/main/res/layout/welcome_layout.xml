@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/welcome_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/padding_16"
+    android:background="@color/background_color"
+    tools:context=".WelcomeActivity"
+    >
+
+    <!-- FPT Logo -->
+    <ImageView
+        android:id="@+id/fpt_logo3"
+        android:layout_width="wrap_content"
+        android:layout_height="383dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/margin_100"
+        android:contentDescription="@string/fpt_logo_description"
+        android:src="@drawable/fpt_logo" />
+
+    <!-- Welcome Text -->
+    <TextView
+        android:id="@+id/welcome_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/fpt_logo3"
+        android:layout_marginTop="@dimen/margin_20"
+        android:text="@string/welcome_title"
+        android:textSize="@dimen/text_size24"
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true" />
+
+    <!-- Logout Button -->
+    <Button
+        android:id="@+id/logout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/welcome_text"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="24dp"
+        android:background="@color/white"
+        android:textColor="@color/black"
+        android:onClick="logout"
+        android:text="@string/logout"
+        tools:ignore="TextContrastCheck" />
+
+</RelativeLayout>

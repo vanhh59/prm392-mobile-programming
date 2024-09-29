@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">Demo Login</string>
+    <string name="login_button">Login</string>
+    <string name="fpt_logo_description">FPT University</string>
+    <string name="login_title">Login</string>
+    <string name="username_hint">Username</string>
+    <string name="not_account_text">Not find account</string>
+    <string name="welcome_message">Hello world</string>
+    <string name="password">Mật khẩu</string>
+    <string name="Or">Hoặc</string>
+    <string name="signup">Đăng kí tài khoản</string>
+    <string name="welcome_title">Welcome FPTU</string>
+    <string name="logout">Logout</string>
+    <string name="register_title">Register Account</string>
+    <string name="email_hint">Input New Email</string>
+    <string name="password_hint">Input New Password</string>
+    <string name="confirm_password_hint">Input Password Again</string>
+    <string name="register_button">Register</string>
+    <string name="already_have_account_text">Already have account! Please Click!</string>
+    <string name="go_to_login_button">Login\n</string>
+</resources>
