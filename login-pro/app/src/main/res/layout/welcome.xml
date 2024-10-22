@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layout_welcome"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="@color/background_color">
+
+    <!-- FPT Logo -->
+    <ImageView
+        android:id="@+id/image_fpt_logo_welcome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="120dp"
+        android:contentDescription="lo_fpt"
+        android:src="@drawable/image_fpt_logo_welcome"
+        tools:ignore="HardcodedText,ImageContrastCheck" />
+
+    <!-- Welcome Text -->
+    <TextView
+        android:id="@+id/text_welcome_message"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="xin chào"
+        android:layout_below="@+id/image_fpt_logo_welcome"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        tools:ignore="HardcodedText" />
+
+</RelativeLayout>

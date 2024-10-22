@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Option Menu</string>
+    <string name="search">Search</string>
+    <string name="context">Context</string>
+    <string name="email">Email</string>
+    <string name="phone">Phone</string>
+    <string name="share">Share</string>
+</resources>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/imageViewHinh"
+        android:layout_width="140dp"
+        android:layout_height="140dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginLeft="20dp"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <TextView
+        android:id="@+id/textViewTenxe"
+        android:layout_width="211dp"
+        android:layout_height="54dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_toRightOf="@id/imageViewHinh"
+        android:text="TextView"
+        android:textSize="20sp" />
+    <TextView
+        android:id="@+id/textViewHangsx"
+        android:layout_width="211dp"
+        android:layout_height="54dp"
+        android:layout_below="@id/textViewTenxe"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_toRightOf="@id/imageViewHinh"
+        android:text="TextView"
+        android:textSize="20sp" />
+    <TextView
+        android:id="@+id/textViewNamsx"
+        android:layout_width="211dp"
+        android:layout_height="54dp"
+        android:layout_below="@id/textViewHangsx"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_toRightOf="@id/imageViewHinh"
+        android:text="TextView"
+        android:textSize="20sp" />
+
+</RelativeLayout>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <!--    Muc Share   -->
+    <item
+        android:id="@+id/menu_share"
+        android:title="@string/share"
+        android:icon="@drawable/ic_share_24"
+        app:showAsAction="ifRoom"
+        />
+
+    <!--    Muc Search   -->
+    <item
+        android:id="@+id/menu_search"
+        android:title="@string/search"
+        android:icon="@drawable/ic_search_24"
+        android:paddingStart="10dp"
+        app:showAsAction="ifRoom" />
+
+    <!--    Muc Context   -->
+
+    <item
+        android:id="@+id/menu_context"
+        android:title="@string/context"
+        android:icon="@drawable/ic_context_24"
+        app:showAsAction="never" >
+        <menu>
+
+            <!--  Menu Con -->
+            <item
+                android:id="@+id/menu_email"
+                android:title="@string/email"
+                android:icon="@drawable/ic_email_24"
+                app:showAsAction="never" />
+            <item
+                android:id="@+id/menu_phone"
+                android:title="@string/phone"
+                android:icon="@drawable/ic_phone_24"
+                app:showAsAction="never" />
+    </menu>
+
+    </item>
+</menu>

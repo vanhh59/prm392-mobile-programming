@@ -1,0 +1,59 @@
+plugins {
+    alias(libs.plugins.android.application)
+}
+
+android {
+    namespace 'com.example.apidemo'
+    compileSdk 34
+
+    viewBinding {
+        enabled = true
+    }
+
+    defaultConfig {
+        applicationId "com.example.apidemo"
+        minSdk 34
+        targetSdk 34
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+}
+
+dependencies {
+
+    implementation libs.appcompat
+    implementation libs.material
+    implementation libs.activity
+    implementation libs.constraintlayout
+    testImplementation libs.junit
+    androidTestImplementation libs.ext.junit
+    androidTestImplementation libs.espresso.core
+
+    //Thư viện dùng cho testing.
+    testImplementation 'junit:junit:4.13.2'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.5'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.5.1'
+    //Volley: Thư viện cho các yêu cầu HTTP.
+    implementation 'com.android.volley:volley:1.2.1'
+    //Retrofit: Thư viện HTTP Client và REST API.
+    implementation 'com.squareup.retrofit2:retrofit:2.9.0'
+    //Gson Converter: Dùng để chuyển đổi JSON trong Retrofit.
+    implementation 'com.squareup.retrofit2:converter-gson:2.9.0'
+
+    // thêm thư viện để thao tác ảnh ở URL
+    //implementation 'com.github.bumptech.glide:glide:4.15.1'
+    //annotationProcessor 'com.github.bumptech.glide:compiler:4.15.1'
+}
